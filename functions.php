@@ -14,5 +14,5 @@ register_sidebar(array(
 add_theme_support('automatic-feed-links');
 
 // Translate, if applicable
-load_theme_textdomain('fiver', get_template_directory() . '/translation');
+load_theme_textdomain('fiver', get_template_directory() . '/languages');
 ?>
