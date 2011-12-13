@@ -8,10 +8,14 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<div <?php post_class() ?>>
-				<h3 id="post-<?php the_ID(); ?>">&bull; <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<small><?php the_time(get_option('date_format')) ?></small>
-			</div>
+			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+				
+				<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+				<time><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_time(get_option('date_format')) ?></a></time>
+		
+				<?php the_excerpt(); ?>
+				
+			</article>
 
 		<?php endwhile; ?>
 

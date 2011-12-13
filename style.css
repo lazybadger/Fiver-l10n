@@ -2,29 +2,39 @@
 Theme Name: Fiver
 Description: Custom 21st Century HTML5 and CSS 3 theme with no images!
 Author: Stinkyink
-Version: 1.9
+Version: 2.1.3
 Tags: black, white, light, two-columns, fixed-width
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Theme URI: http://www.stinkyinkshop.co.uk/blog/themes/fiver-theme/
-Author URI: http://www.stinkyinkshop.co.uk/blog/themes/
+Theme URI: http://www.stinkyinkshop.co.uk/themes/t/fiver-theme/
+Author URI: http://www.stinkyinkshop.co.uk/themes/
 */
 
+header,footer,section,aside,nav,article {
+ display: block; 
+}
+
 body {
-	width: 750px;
-	margin: 50px auto;
 	font-family: arial,sans-serif;
 	color: #000;
+	font-size: 67.5%;
 	background-color: #fff;
-	position: relative;
 	font-size: 12px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#wrapper {
+	width: 750px;
+	margin: 50px auto;
+  position: relative;
 }
 
 header h1 {
 	margin-left: 200px;
-	font-size: 56px;
+	font-size: 4em;
 	letter-spacing: -0.07em;
-	text-shadow: 3px 3px 3px #ccc;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
 	
 }
 
@@ -42,7 +52,7 @@ a:hover {
 blockquote {
   padding: 0 40px;
   position: relative;
-  border: 1px dashed #ccc;
+  border: 1px dashed rgba(0,0,0,0.2);;
   margin: 0 0 20px 0;
 }
 
@@ -52,18 +62,18 @@ blockquote cite {
 
 blockquote:before {
   content: '\201C';
-  font-size: 55px;
-  color: #ccc;
+  font-size: 4em;
+  color: rgba(0,0,0,0.2);
   position: absolute;
   top: 0px;
   left: 10px;
 }
 blockquote:after {
   content: '\201D';
-  font-size: 55px;
-  color: #ccc;
+  font-size: 4em;
+  color: rgba(0,0,0,0.2);
   position: absolute;
-  bottom: -30px;
+  bottom: -25px;
   right: 10px;
 }
 
@@ -71,7 +81,7 @@ blockquote:after {
 table {
  width: 100%;
  border: 1px solid #ccc; 
- font-size: 12px;
+ font-size: 1em;
  margin-bottom: 20px;
 }
 
@@ -85,9 +95,7 @@ th, td {
  padding: 5px; 
 }
 
-dl {
- font-size: 12px; 
-}
+
 
 dt {
  font-weight: bold; 
@@ -98,9 +106,6 @@ dd {
  margin-left: 10px; 
 }
 
-address {
- font-size: 12px; 
-}
 
 acronym {
  border-bottom: 1px dashed #ccc; 
@@ -125,7 +130,7 @@ section {
 }
 
 article {
-	border-bottom: 1px dashed #ccc;
+	border-bottom: 1px dashed rgba(0,0,0,0.2);;
 	display: block;
 	padding: 0 0 30px 0;
 	margin: 0 0 30px 0;
@@ -134,7 +139,6 @@ article {
 
 
 article p, footer p, article ul, article ol {
-	font-size: 12px;
 	line-height: 1.6em;
 }
 
@@ -144,7 +148,7 @@ article p a {
 }
 
 article a img {
-	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.3);
 	padding: 5px;
 }
 
@@ -194,15 +198,15 @@ footer a:hover {
 article h2 {
 	color: #000;
 	letter-spacing: -0.03em;
-	font-size: 26px;
+	font-size: 2em;
 	font-weight: normal;
 	padding: 0;
 	margin: 0 0 5px 0;
-	text-shadow: 2px 2px 2px #ccc;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
 
 }
 
-article h2 a {
+article h2 a, article h3 a {
 	color: #000;
 	text-decoration: none;
 }
@@ -211,8 +215,7 @@ nav {
 	width: 150px;
 	display: block;
 	text-align: right;
-	font-size: 12px;
-	border-right: 1px dashed #ccc;;
+	border-right: 1px dashed rgba(0,0,0,0.2);
 	float: left;
 	padding-right: 20px;
 }
@@ -220,11 +223,12 @@ nav {
 nav h3 {
 	color: #000;
 	letter-spacing: -0.03em;
-	font-size: 26px;
+	font-size: 1.6em;
 	font-weight: normal;
 	padding: 0;
 	margin: 0 0 15px 0;
-	text-shadow: 2px 2px 2px #ccc;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+	
 }
 
 nav a {
@@ -260,13 +264,11 @@ nav ul {
 }
 
 .comment {
-	border: 1px solid #ccc;
-	padding: 10px 10px 0px 10px;
-	margin: 0 0 20px 0;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 10px 0;
 	position: relative;
 	min-height: 80px;
-	background-color: #fff;
-	border-radius: 5px;
+	background-color: rgba(0,0,0,0.05);
 }
 
 .comment-body {
@@ -276,26 +278,24 @@ nav ul {
 h3#comments, #respond h3 {
 	color: #000;
 	letter-spacing: -0.03em;
-	font-size: 26px;
+	font-size: 1.6em;
 	font-weight: normal;
 	padding: 0;
 	margin: 0 0 15px 0;
-	text-shadow: 2px 2px 2px #ccc;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+	
 }
 
 .comment p {
-	font-size: 12px;
 	line-height: 1.6em;
 	margin-bottom: 10px;
 }
 
 .vcard {
-	font-size: 12px;
 	line-height: 1.6em;
 }
 
 .commentmetadata {
-	font-size: 12px;
 	line-height: 1.6em;
 }
 
@@ -311,7 +311,7 @@ h3#comments, #respond h3 {
 
 
 .even {
-	background-color: #eee;
+	background-color: rgba(0,0,0,0.1);
 }
 
 .avatar {
@@ -324,21 +324,17 @@ h3#comments, #respond h3 {
 /* ping backs */
 
 .pingback, .trackback {
-	border: 1px solid #ccc;
 	padding: 10px 10px 0px 10px;
 	margin: 0 0 20px 0;
 	position: relative;
 	min-height: 80px;
-	background-color: #eee;
-	border-radius: 5px;
+  background-color: rgba(0,0,0,0.05);
 	color: #ccc;
-	font-size: 12px;
 	color: #666;
 
 }
 
 .pingback p, .trackback p {
-	font-size: 12px;
 	line-height: 1.6em;
 	margin-bottom: 10px;
 }
@@ -358,7 +354,6 @@ div.reply {
 }
 
 a.comment-reply-link {
- font-size: 12px;
  font-weight: bold; 
 }
 
@@ -404,7 +399,7 @@ p.form-submit input {
 #archive article img {
 	position: absolute;
 	padding: 5px;
-	border: 1px solid #eee !important;
+	border: 1px solid rgba(0,0,0,0.3); !important;
 	top: 75px;
 	left: 0px;
 }
@@ -418,7 +413,6 @@ p.form-submit input {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 12px;
 	border-bottom: 1px dashed #ccc;
 	padding: 0 0 30px 0;
 	margin: 0 0 30px 0;
@@ -454,13 +448,11 @@ p.form-submit input {
 }
 .wp-caption p.wp-caption-text {
 	color: #888;
-	font-size: 12px;
 	margin: 5px 0 5px 0;
 }
 
 .gallery .gallery-caption {
 	color: #888;
-	font-size: 12px;
 	margin: 0 0 12px;
 }
 
@@ -493,9 +485,10 @@ img.aligncenter {
 }
 
 .sticky {
- border: 1px dashed #ccc;
+ border: 1px solid rgba(0,0,0,0.3);
  padding: 10px;
  background-color: #f9f9f9; 
+ background-color: rgba(0,0,0,0.05);
 }
 
 .commentlist .bypostauthor {
