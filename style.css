@@ -2,8 +2,8 @@
 Theme Name: Fiver
 Description: Custom 21st Century HTML5 and CSS 3 theme with no images!
 Author: Stinkyink
-Version: 2.1.3
-Tags: black, white, light, two-columns, fixed-width
+Version: 2.2.3
+Tags: black, white, light, one-column, two-columns, fixed-width, custom-background, sticky-post, threaded-comments
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Theme URI: http://www.stinkyinkshop.co.uk/themes/t/fiver-theme/
@@ -31,11 +31,13 @@ body {
 }
 
 header h1 {
-	margin-left: 200px;
 	font-size: 4em;
 	letter-spacing: -0.07em;
 	text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
-	
+}
+
+.has_sidebar header h1 {
+ 	margin-left: 200px; 
 }
 
 header h1 a {
@@ -123,7 +125,7 @@ s, strike, del {
 
 
 
-section {
+.has_sidebar section {
 	display: block;
 	width: 550px;
 	float: right;
@@ -211,7 +213,7 @@ article h2 a, article h3 a {
 	text-decoration: none;
 }
 
-nav {
+.has_sidebar nav {
 	width: 150px;
 	display: block;
 	text-align: right;
@@ -245,6 +247,10 @@ nav ul {
 	color: #666;
 }
 
+
+header a img, nav a img {
+ border: none;
+}
 
 
 /* comments */
