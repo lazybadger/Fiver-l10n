@@ -3,7 +3,7 @@
 if ( ! isset( $content_width ) ) $content_width = 550;
 
 add_theme_support('automatic-feed-links');
-add_custom_background();
+add_theme_support('custom-background');
 add_action('widgets_init', 'fiver_sidebar');
 
 function fiver_sidebar() {

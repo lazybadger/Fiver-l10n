@@ -1,13 +1,17 @@
 Theme Name: Fiver
 Description: Custom 21st Century HTML5 and CSS 3 theme with no images!
 Author: Stinkyink
-Version: 2.2.4
+Version: 2.2.6
 Tags: black, white, light, one-column, two-columns, fixed-width, custom-background, sticky-post, threaded-commentsLicense: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Theme URI: http://www.stinkyinkshop.co.uk/themes/t/fiver-theme/
 Author URI: http://www.stinkyinkshop.co.uk/themes/
 
 == Change Log ==
+
+2.2.6 	- Killed invisible files
+
+2.2.5   - Replace add_custom_background() with add_theme_support('custom-background') ready for WP 3.4
 
 2.2.4   - Tweaked selector for .clearfix as it was interfering with the Disqus plugin
 
